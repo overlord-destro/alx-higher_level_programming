@@ -1,4 +1,4 @@
-#!/usr/bim/python3
+#!/usr/bi/python3
 def safe_print_integer(value):
     try:
         print("{:d}".format(value))
