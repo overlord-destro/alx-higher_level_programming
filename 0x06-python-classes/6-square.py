@@ -3,8 +3,8 @@
 
 
 class Square:
+    """initializes with class and accepts size and position"""
     def __init__(self, size=0, position=(0, 0)):
-        """initializes with class and accepts size and position"""
         if type(size) != int:
             raise TypeError("size must be an integer")
         if size < 0:
