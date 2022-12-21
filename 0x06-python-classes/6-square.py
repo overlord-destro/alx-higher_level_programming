@@ -18,7 +18,7 @@ class Square:
                     "posititon must be a tuple of 2 positive integers")
         if position[0] < 0 or position[1] < 0:
             raise TypeError("posititon must be a tuple of 2 positive integers")
-         
+
         self.__size = size
         self.__position = position
 
