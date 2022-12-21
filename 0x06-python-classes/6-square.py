@@ -36,6 +36,7 @@ class Square:
                     "posititon must be a tuple of 2 positive integers")
         if value[0] < 0 or value[1] < 0:
             raise TypeError("posititon must be a tuple of 2 positive integers")
+        self.__position = value
 
     def my_print(self):
         if self.size == 0:
