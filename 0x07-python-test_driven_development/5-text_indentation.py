@@ -16,7 +16,7 @@ def text_indentation(text):
             continue
         else:
             new += text[i]
-
+    new = new.strip(" ")
     for char in new:
         if char in [".", "?", ":"]:
             print(char + "\n\n", end="")
