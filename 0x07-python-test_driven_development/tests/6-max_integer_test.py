@@ -30,3 +30,11 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_diffdata(self):
         with self.assertRaises(TypeError):
             max_integer([0, '1'])
+
+    def test_max_dict(self):
+        with self.assertRaises(KeyError):
+            max_integer({"1": "2", "2": "4"})
+
+    def test_max_set(self):
+        with self.assertRaises(TypeError):
+            max_integer({0, 1, 2, 3})
