@@ -5,7 +5,6 @@
 class MyList(list):
     """subclass of the class list"""
 
-
     def print_sorted(self):
         cpy = self.copy()
         cpy.sort()
